@@ -1,50 +1,30 @@
-# SUUMIN SAMPLER UI
+# SUUUMIN SAMPLER UI
 
-**Sumin Sampler UI** is a design system and React components with the motif of a music sampler.
+![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-ui.png)
 
-# Getting Started with Create React App
+![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-wireframe.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Suuumin Sampler UI** is a design system and React components with the motif of a music sampler.
 
-## Available Scripts
+### This project uses:
 
-In the project directory, you can run:
+- React.js
+- TypeScript
+- Figma
+- Storybook
 
-### `npm start`
+### Feature:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- An unusual design system with music equipment as its theme.
+- Web-optimized layout designed with a grid system like Bootstrap 5.
+- Verify feasibility from both WEB API and design, and update each other daily.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Roadmap to Version 1.0.0
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Rough design (with Figma) **<=== NOW!!**
+2. Examining color schemes and design tokens  (with Figma)
+3. Create components for primary design parts (with Figma)
+4. Create React Components (with React)
+5. Two-way brush-up of Figma and React designs
+6. Publish Figma files as Figma template
