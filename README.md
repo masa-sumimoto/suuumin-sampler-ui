@@ -1,10 +1,12 @@
 # SUUUMIN SAMPLER UI
 
+**Suuumin Sampler UI** is a design system and React components with the motif of a music sampler.
+
+![ui-cover](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-cover.jpg)
+
 ![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-ui.png)
 
 ![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-wireframe.png)
-
-**Suuumin Sampler UI** is a design system and React components with the motif of a music sampler.
 
 ### This project uses:
 
@@ -18,7 +20,6 @@
 - An unusual design system with music equipment as its theme.
 - Web-optimized layout designed with a grid system like Bootstrap 5.
 - Verify feasibility from both WEB API and design, and update each other daily.
-
 
 ## Roadmap to Version 1.0.0
 
