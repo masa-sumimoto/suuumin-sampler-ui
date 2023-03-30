@@ -66,6 +66,7 @@
     "@testing-library/dom": "^9.2.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
+    "sass": "^1.60.0",
     "webpack": "^5.76.3"
   }
 }
