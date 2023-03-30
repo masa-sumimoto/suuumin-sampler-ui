@@ -1,0 +1,76 @@
+.pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1E293B;
+  width: 120px; /* 122 - 2 */
+  height: 120px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.pad::before {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(0deg, #1E293B, #334155);
+  content: '';
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.pad--state_active {
+  background-color: #22D3EE;
+}
+
+.pad__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.pad__btn {
+  position: relative;
+  background-color: #334155;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 112px; /* 114 - 2 */
+  height: 112px;
+  border: none;
+}
+
+.pad__btn::before {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  opacity: 0.16;
+  content: '';
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.pad__btn::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  opacity: 0.2;
+  content: '';
+  z-index: 2;
+  border-radius: 6px;
+}
+
+.pad__label {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #F1F5F9;
+  font-size: 12px;
+}

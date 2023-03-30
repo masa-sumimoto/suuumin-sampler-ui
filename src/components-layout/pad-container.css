@@ -1,0 +1,10 @@
+.pad-container {
+  display: flex;
+  gap: 24px;
+  padding: 12px;
+  flex-wrap: wrap;
+  /* background-color: #eec; */
+  width: 584px;
+  position: relative;
+  z-index: 1;
+}
