@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./pad-container.css";
+import "./pad-container.scss";
 
 import Pad from "../components/Pad";
 

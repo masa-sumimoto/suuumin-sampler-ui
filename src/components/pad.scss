@@ -1,0 +1,109 @@
+.pad {
+  $_pad-node-size: 122px;
+  $_pad-offset: 1px;
+  $_pad-size: $_pad-node-size - $_pad-offset * 2;
+  $_pad-radius: 6px;
+
+  $_pad-node-size: 114px;
+  $_pad-btn-offset: 1px;
+  $_pad-btn-size: $_pad-node-size - $_pad-btn-offset * 2;
+  $_pad-btn-radius: 6px;
+
+  // [todo]
+  //
+  // カラー定義を別途グローバルな領域で行う
+  $color-gray-100: #f1f5f9;
+  $color-gray-900: #1e293b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: $color-gray-900;
+  width: $_pad-size;
+  height: $_pad-size;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: $_pad-radius;
+
+  &--state_active {
+    background-color: #22d3ee;
+  }
+
+  // &--size_sm {}
+
+  // &--size_md {}
+
+  // &--size_lg {}
+
+  // borderを表現する背後の要素
+  //
+  &::before {
+    position: absolute;
+    top: -#{$_pad-offset};
+    bottom: -#{$_pad-offset};
+    left: -#{$_pad-offset};
+    right: -#{$_pad-offset};
+    background: linear-gradient(0deg, $color-gray-900, #334155);
+    content: "";
+    border-radius: $_pad-radius;
+    z-index: -1;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__btn {
+    position: relative;
+    background-color: #334155;
+    cursor: pointer;
+    border-radius: 6px;
+    width: $_pad-btn-size;
+    height: $_pad-btn-size;
+    border: none;
+
+    // borderを表現する背後の要素
+    //
+    &::before {
+      position: absolute;
+      top: -#{$_pad-btn-offset};
+      bottom: -#{$_pad-btn-offset};
+      left: -#{$_pad-btn-offset};
+      right: -#{$_pad-btn-offset};
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 1)
+      );
+      opacity: 0.16;
+      content: "";
+      border-radius: $_pad-btn-radius;
+      z-index: -1;
+    }
+
+    // 前面の下方向からの影
+    //
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      opacity: 0.2;
+      content: "";
+      z-index: 2;
+      border-radius: 6px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: $color-gray-100;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
