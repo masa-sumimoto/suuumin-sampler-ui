@@ -3,8 +3,11 @@
   gap: 24px;
   padding: 12px;
   flex-wrap: wrap;
-  /* background-color: #eec; */
   width: 584px;
+  height: 584px;
   position: relative;
   z-index: 1;
+
+  // debug
+  background-color: rgba(255, 255, 255, 0.2);
 }

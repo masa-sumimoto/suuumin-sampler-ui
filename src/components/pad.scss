@@ -58,7 +58,7 @@
     position: relative;
     background-color: #334155;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: $_pad-radius;
     width: $_pad-btn-size;
     height: $_pad-btn-size;
     border: none;
@@ -94,7 +94,7 @@
       opacity: 0.2;
       content: "";
       z-index: 2;
-      border-radius: 6px;
+      border-radius: $_pad-radius;
     }
   }
 
