@@ -10,7 +10,7 @@
 
 ### Layout Sample (1280 pixels wide case)
 
-![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/preview-wireframe.png)
+![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/layout-1280.png)
 
 ### This project uses:
 
@@ -25,11 +25,25 @@
 - Web-optimized layout designed with a grid system like Bootstrap 5.
 - Verify feasibility from both WEB API and design, and update each other daily.
 
-## Roadmap to Version 1.0.0
+## Roadmap to Version 0.1.0
 
-1. Rough design (with Figma) **<=== NOW!!**
+1. Rough Design & Coding (with Figma & React) **<=== NOW!!**
 2. Examining color schemes and design tokens  (with Figma)
 3. Create components for primary design parts (with Figma)
 4. Create React Components (with React)
 5. Two-way brush-up of Figma and React designs
 6. Publish Figma files as Figma template
+
+※Until version 0.1.0, I will do destructive editing.
+
+## Previews
+
+
+### Web Preview
+
+https://suuumin-sampler-ui.masa-sumimoto.com/
+
+
+### Design Preview
+
+※ Currently in preparation
