@@ -1,5 +1,5 @@
 import React from "react";
-import "./pad.scss";
+import "../scss/pad.scss";
 
 interface PadProps {
   isActive?: boolean;
@@ -9,11 +9,13 @@ interface PadProps {
 }
 
 const Pad = ({ isActive = false, size = "md", label, ...props }: PadProps) => {
-  const activeClass = isActive ? "pad--state_active" : "";
+  const activeClass = isActive ? "--state_active" : "";
 
   return (
-    <div className={["pad", `pad--size_${size}`, activeClass].join(" ")}>
-      <div className="pad__inner">
+    <div className={["pad", `--size_${size}`, activeClass].join(" ")}>
+      <div className="pad__foundation"></div>
+
+      <div className="pad__btn-wrap">
         <button className="pad__btn" onClick={props.onClick}>
           {label && <span className="pad__label">{label}</span>}
         </button>

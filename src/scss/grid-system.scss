@@ -1,0 +1,32 @@
+@use './variables' as *;
+
+.app-container {
+  width: 100%;
+  max-width: $app-max-width;
+  padding: 0 $app-gutter;
+}
+
+.app-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1 * $app-gutter;
+}
+
+.app-row > [class^="app-col-"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  padding: 0 $app-gutter;
+}
+
+.app-col-12 {
+  width: 100%;
+}
+
+.app-col-6 {
+  width: 50%;
+}
+
+.app-col-4 {
+  width: 25%;
+}

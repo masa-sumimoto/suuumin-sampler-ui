@@ -1,18 +1,24 @@
 import React from "react";
 
-import PadContainer from "./PadContainer";
-import EditContainer from "./EditContainer";
-import HeadContainer from "./HeadContainer";
-
-import "./app-body.scss";
+import PadContents from "./PadContents";
+import EditContents from "./EditContents";
+import HeadContents from "./HeadContents";
 
 const AppBody = () => {
   return (
-    <div className="app-body-container">
-      <HeadContainer />
-      <div className="app-main-container">
-        <PadContainer />
-        <EditContainer />
+    <div className="app-body">
+      <div className="app-container">
+        <div className="app-row">
+          <div className="app-col-12">
+            <HeadContents />
+          </div>
+          <div className="app-col-6">
+            <PadContents />
+          </div>
+          <div className="app-col-6">
+            <EditContents />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+.meta-wrap {
+  background-color: #39466b;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.meta-ttl {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: auto;
+}
+
+.app-body {
+  background-color: $color-gray-900;
+  border-radius: 6px;
+  padding: $app-gutter 0;
+}
+
+.head-container {
+  width: 100%;
+  height: 36px;
+  // debug
+  color: white;
+  // background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pad-container {
+  position: relative;
+  z-index: 1;
+}
+
+.edit-container {
+  // background-color: blue;
+}
