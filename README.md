@@ -17,6 +17,20 @@
 - Figma
 - Storybook
 
+## Previews
+
+
+### Web Preview
+
+https://suuumin-sampler-ui.masa-sumimoto.com/
+
+※ Currently in preparation  
+**※ Each part is created with responsive design in mind, but the layout of the app itself is created with the assumption that it will be used at 992px or higher.**
+
+### Design Preview (Figma Template)
+
+※ Currently in preparation
+
 ### UI Sample (1280 pixels wide case)
 
 ![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/ui-1280.png)
@@ -53,16 +67,3 @@ These are only partially shown as more specific color schemes can be referenced 
 
 ※Until version 0.1.0, I will do destructive editing.
 
-## Previews
-
-
-### Web Preview
-
-https://suuumin-sampler-ui.masa-sumimoto.com/
-
-※ Currently in preparation  
-**※ Each part is created with responsive design in mind, but the layout of the app itself is created with the assumption that it will be used at 992px or higher.**
-
-### Design Preview (Figma Template)
-
-※ Currently in preparation

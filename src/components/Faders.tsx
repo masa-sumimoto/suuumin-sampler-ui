@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Fader from "./Fader";
 
 const Faders = () => {
+  const [value, setValue] = useState(0);
+
+  const handleSliderChange = (newValue: number) => {
+    setValue(newValue);
+  };
+
   return (
     <>
       <div className="app-col-6">
-        <div className="fader">Fader1</div>
+        <Fader
+          min={-10}
+          max={10}
+          step={1}
+          value={0}
+          onChange={handleSliderChange}
+        />
       </div>
       <div className="app-col-6">
-        <div className="fader">Fader2</div>
+        <Fader
+          min={-10}
+          max={10}
+          step={1}
+          value={0}
+          onChange={handleSliderChange}
+        />
       </div>
     </>
   );
