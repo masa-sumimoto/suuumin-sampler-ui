@@ -4,6 +4,19 @@
 
 ![ui-cover](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/cover.jpg)
 
+### Feature:
+
+- An unusual design system with music equipment as its theme.
+- Web-optimized layout designed with a grid system like Bootstrap 5.
+- Verify feasibility from both WEB API and design, and update each other daily.
+
+### This project uses:
+
+- React.js
+- TypeScript
+- Figma
+- Storybook
+
 ### UI Sample (1280 pixels wide case)
 
 ![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/ui-1280.png)
@@ -16,19 +29,18 @@
 
 ![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/color-system.png)
 
+I think about color in three steps.
 
-### This project uses:
+The first is like a color palette. All colors used in the design are limited to these.
 
-- React.js
-- TypeScript
-- Figma
-- Storybook
+(Irregulars also exist. For example, if you want to add a Twitter icon, it's a special color that is excluded from this world.)
 
-### Feature:
+The second is "role colors".  
+For example, in flashing lights, it is very useful to indicate its status.
 
-- An unusual design system with music equipment as its theme.
-- Web-optimized layout designed with a grid system like Bootstrap 5.
-- Verify feasibility from both WEB API and design, and update each other daily.
+The third are for design parts.  
+These are only partially shown as more specific color schemes can be referenced from the actual parts.
+
 
 ## Roadmap to Version 0.1.0
 
