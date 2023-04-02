@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 .meta-wrap {
-  background-color: #39466b;
+  background-color: #121822;
   height: 100%;
   width: 100%;
   padding: 1rem;
@@ -22,7 +22,7 @@
   transition: 0.3s;
 
   &:hover {
-    color: white;
+    color: $color-role-text;
   }
 }
 
@@ -30,7 +30,7 @@
   text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
-  color: white;
+  color: $color-role-text;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -39,7 +39,7 @@
 .app {
   display: flex;
   justify-content: center;
-  color: white;
+  color: $color-role-text;
   height: auto;
 }
 
@@ -47,14 +47,12 @@
   background-color: $color-slate-900;
   border-radius: 6px;
   padding: $app-gutter 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .head-container {
   width: 100%;
   height: 36px;
-  // debug
-  color: white;
-  // background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pad-container {
@@ -62,6 +60,4 @@
   z-index: 1;
 }
 
-.edit-container {
-  // background-color: blue;
-}
+// .edit-container {}
