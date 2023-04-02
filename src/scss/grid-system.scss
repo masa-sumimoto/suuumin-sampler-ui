@@ -1,9 +1,26 @@
 @use './variables' as *;
+@use 'sass:map';
 
 .app-container {
   width: 100%;
-  max-width: $app-max-width;
+  max-width: 100%;
   padding: 0 $app-gutter;
+
+  @media (min-width: map.get($app-breakpoints, "sm")) {
+    max-width: map.get($app-max-widths, "sm");
+  }
+
+  @media (min-width: map.get($app-breakpoints, "md")) {
+    max-width: map.get($app-max-widths, "md");
+  }
+
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    max-width: map.get($app-max-widths, "lg");
+  }
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    max-width: map.get($app-max-widths, "xl");
+  }
 }
 
 .app-row {
@@ -29,4 +46,10 @@
 
 .app-col-4 {
   width: 25%;
+}
+
+.app-col-lg-6 {
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    width: 50%;
+  }
 }

@@ -102,3 +102,18 @@ $color-teal-950: #042f2e;
 
 $app-max-width: 1216px;
 $app-gutter: 12px;
+
+$app-max-widths: (
+  sm: 540px,
+  md: 704px,
+  lg: 928px,
+  xl: 1216px,
+);
+
+$app-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+);
