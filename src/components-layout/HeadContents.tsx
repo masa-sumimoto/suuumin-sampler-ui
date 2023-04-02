@@ -14,7 +14,9 @@ const HeadContents = () => {
             <MeasureLed />
           </div>
         </div>
-        <div className="app-col-auto">LOGO LOGO LOGO</div>
+        <div className="app-col-auto">
+          <div className="app-logo">Suuumin Sampler</div>
+        </div>
       </div>
     </div>
   );
