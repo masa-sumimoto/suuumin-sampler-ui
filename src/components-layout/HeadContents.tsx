@@ -5,8 +5,8 @@ import MeasureLed from "../components/MeasureLed";
 const HeadContents = () => {
   return (
     <div className="head-container app-u-mb-gutter">
-      <div className="app-row app-u-mx-0">
-        <div className="app-col-12">
+      <div className="app-row app-u-mx-0 app-u-h-100 app-u-justify-content-between app-u-align-items-end">
+        <div className="app-col-auto">
           <div className="measure-leds">
             <MeasureLed isActive={true} />
             <MeasureLed />
@@ -14,6 +14,7 @@ const HeadContents = () => {
             <MeasureLed />
           </div>
         </div>
+        <div className="app-col-auto">LOGO LOGO LOGO</div>
       </div>
     </div>
   );

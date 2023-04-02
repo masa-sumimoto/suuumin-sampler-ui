@@ -29,26 +29,48 @@
   margin: 0 -1 * $app-gutter;
 }
 
-.app-row > [class^="app-col-"] {
+// .app-row > [class^="app-col-"] {
+//   flex-grow: 0;
+//   flex-shrink: 0;
+//   flex-basis: auto;
+//   padding: 0 $app-gutter;
+// }
+
+@mixin col-style() {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
   padding: 0 $app-gutter;
 }
 
+.app-col {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.app-col-auto {
+  @include col-style;
+  max-width: none;
+}
+
 .app-col-12 {
+  @include col-style;
   width: 100%;
 }
 
 .app-col-6 {
+  @include col-style;
   width: 50%;
 }
 
 .app-col-4 {
+  @include col-style;
   width: 25%;
 }
 
 .app-col-lg-6 {
+  @include col-style;
   @media (min-width: map.get($app-breakpoints, "lg")) {
     width: 50%;
   }
