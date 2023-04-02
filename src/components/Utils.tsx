@@ -2,9 +2,6 @@ import React from "react";
 
 import SwipePad from "./SwipePad";
 
-import "../scss/bank-btn.scss";
-import "../scss/swipe-pad.scss";
-
 const Utils = () => {
   return (
     <div className="app-col-12">

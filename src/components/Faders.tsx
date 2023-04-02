@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../scss/fader.scss";
-
 const Faders = () => {
   return (
     <>

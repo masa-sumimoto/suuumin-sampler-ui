@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../scss/measure-led.scss";
-
 interface MeasureLedProps {
   isActive?: boolean;
 }

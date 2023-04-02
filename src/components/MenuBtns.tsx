@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../scss/menu-btn.scss";
-
 const Menus = () => {
   return (
     <div className="app-col-12">

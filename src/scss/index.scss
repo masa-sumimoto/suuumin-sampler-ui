@@ -6,6 +6,17 @@
 @use 'grid-system';
 @use 'layouts';
 
+// Components
+//
+
+@use 'bank-btn';
+@use 'degital-canvas';
+@use 'fader';
+@use 'measure-led';
+@use 'menu-btn';
+@use 'pad';
+@use 'swipe-pad';
+
 @use 'other-parts';
 
 // Fonts

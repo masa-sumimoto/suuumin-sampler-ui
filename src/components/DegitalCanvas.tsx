@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import ParticleSystem from "./canvas-contents/ParticleSystem";
-import "../scss/degital-canvas.scss";
 
 const DegitalCanvas: React.FC<{}> = () => {
   let canvas = useRef<HTMLCanvasElement | null>(null);
