@@ -1,4 +1,12 @@
+@use 'sass:map';
 @use './variables' as *;
+
+// gutters
+//
+
+// [todo]
+// 現在は必要そうなものだけベタ書き。
+// 後日ひとまとめに書く
 
 .app-u-py-gutter {
   padding-top: $app-gutter !important;
@@ -36,6 +44,40 @@
   padding-bottom: $app-gutter !important;
 }
 
+// position
+//
+
+// [todo]
+// 現在は必要そうなものだけベタ書き。
+// 後日ひとまとめに書く
+
 .app-u-position-relative {
   position: relative !important;
+}
+
+// order
+//
+
+// [todo]
+// 現在は必要そうなものだけベタ書き。
+// 後日ひとまとめに書く
+
+.app-u-order-1 {
+  order: 1 !important;
+}
+
+.app-u-order-2 {
+  order: 2 !important;
+}
+
+.app-u-order-lg-1 {
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    order: 1 !important;
+  }
+}
+
+.app-u-order-lg-2 {
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    order: 2 !important;
+  }
 }

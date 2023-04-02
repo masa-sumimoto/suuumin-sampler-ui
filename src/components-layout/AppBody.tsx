@@ -12,10 +12,10 @@ const AppBody = () => {
           <div className="app-col-12">
             <HeadContents />
           </div>
-          <div className="app-col-12 app-col-lg-6">
+          <div className="app-col-12 app-col-lg-6 app-u-order-2 app-u-order-lg-1">
             <PadContents />
           </div>
-          <div className="app-col-12 app-col-lg-6">
+          <div className="app-col-12 app-col-lg-6 app-u-order-1 app-u-order-lg-2">
             <EditContents />
           </div>
         </div>
