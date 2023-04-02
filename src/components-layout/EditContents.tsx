@@ -1,5 +1,7 @@
 import React from "react";
 
+import DegitalCanvas from "../components/DegitalCanvas";
+
 const EditContents = () => {
   return (
     <div className="edit-container">
@@ -14,11 +16,7 @@ const EditContents = () => {
       </div>
       <div className="app-row app-u-py-gutter app-u-mx-0">
         <div className="app-col-12">
-          <div className="edit-content --b">
-            B row. this is contents. this is contents. this is contents. this is
-            contents. this is contents. this is contents. this is contents. this
-            is contents. this is contents.
-          </div>
+          <DegitalCanvas />
         </div>
       </div>
       <div className="app-row app-u-py-gutter app-u-mx-0">
