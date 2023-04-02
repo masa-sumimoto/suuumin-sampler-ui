@@ -7,13 +7,33 @@
   padding: 1rem;
 }
 
+.meta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 1rem 0;
+}
+
+.meta-github-link {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover {
+    color: white;
+  }
+}
+
 .meta-ttl {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
   color: white;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
 .app {
