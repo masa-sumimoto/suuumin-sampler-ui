@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use './variables' as *;
 
 .pad {
@@ -47,6 +48,14 @@
       display: block;
       padding-top: 100%;
       content: "";
+
+      @media (min-width: map.get($app-breakpoints, "sm")) {
+        padding-top: 60%;
+      }
+
+      @media (min-width: map.get($app-breakpoints, "lg")) {
+        padding-top: 100%;
+      }
     }
   }
 

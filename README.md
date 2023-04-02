@@ -60,7 +60,9 @@ These are only partially shown as more specific color schemes can be referenced 
 
 https://suuumin-sampler-ui.masa-sumimoto.com/
 
+※ Currently in preparation  
+**※ Each part is created with responsive design in mind, but the layout of the app itself is created with the assumption that it will be used at 992px or higher.**
 
-### Design Preview
+### Design Preview (Figma Template)
 
 ※ Currently in preparation
