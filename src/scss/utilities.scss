@@ -107,10 +107,18 @@
   justify-content: space-between !important;
 }
 
+.app-u-justify-content-end {
+  justify-content: end !important;
+}
+
 .app-u-align-items-end {
   align-items: flex-end !important;
 }
 
 .app-u-d-gap-gutter {
   gap: $app-gutter !important;
+}
+
+.texts {
+  text-align: right;
 }

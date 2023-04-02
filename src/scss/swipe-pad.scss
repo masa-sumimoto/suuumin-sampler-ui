@@ -1,7 +1,9 @@
 @use './variables' as *;
 
 .swipe-pad {
-  width: 244px;
+  width: 100%;
+  max-width: 244px;
   height: 48px;
   background-color: $color-slate-500;
+  display: flex;
 }
