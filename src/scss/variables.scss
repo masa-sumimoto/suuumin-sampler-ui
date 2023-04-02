@@ -1,6 +1,8 @@
 // Color System
 //
 
+// Origin Colors
+
 $color-slate-50: #f8fafc;
 $color-slate-100: #f1f5f9;
 $color-slate-200: #e2e8f0;
@@ -96,6 +98,14 @@ $color-teal-700: #10756c;
 $color-teal-800: #125d58;
 $color-teal-900: #144d4a;
 $color-teal-950: #042f2e;
+
+// Role Colors
+
+$color-role-base: $color-slate-900;
+$color-role-text: $color-slate-100;
+$color-role-select: $color-cyan-400;
+$color-role-idle: $color-lime-400;
+$color-role-danger: $color-pink-600;
 
 // Sizes
 //
