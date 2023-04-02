@@ -17,7 +17,6 @@ function App() {
           GitHub
         </a>
       </div>
-
       <div className="app">
         <AppBody />
       </div>

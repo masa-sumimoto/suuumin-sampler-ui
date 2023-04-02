@@ -19,6 +19,7 @@
   }
 
   @media (min-width: map.get($app-breakpoints, "xl")) {
+    width: map.get($app-max-widths, "xl");
     max-width: map.get($app-max-widths, "xl");
   }
 }
@@ -67,6 +68,11 @@
 .app-col-4 {
   @include col-style;
   width: 25%;
+}
+
+.app-col-1dot5 {
+  @include col-style;
+  width: 12.5%;
 }
 
 .app-col-lg-6 {

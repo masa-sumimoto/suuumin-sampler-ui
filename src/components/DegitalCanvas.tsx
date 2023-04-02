@@ -27,8 +27,10 @@ const DegitalCanvas: React.FC<{}> = () => {
   }, []);
 
   return (
-    <div className="degital-canvas">
-      <canvas ref={canvas}>this is canvas</canvas>
+    <div className="app-col-12">
+      <div className="degital-canvas">
+        <canvas ref={canvas}>this is canvas</canvas>
+      </div>
     </div>
   );
 };

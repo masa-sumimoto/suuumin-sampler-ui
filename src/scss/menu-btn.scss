@@ -1,0 +1,6 @@
+@use './variables' as *;
+
+.menu-btn {
+  height: 64px;
+  background-color: $color-slate-500;
+}

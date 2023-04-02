@@ -93,6 +93,13 @@
   height: 100% !important;
 }
 
+// Display
+//
+
+.app-u-d-flex {
+  display: flex !important;
+}
+
 // Flex
 //
 
@@ -102,4 +109,8 @@
 
 .app-u-align-items-end {
   align-items: flex-end !important;
+}
+
+.app-u-d-gap-gutter {
+  gap: $app-gutter !important;
 }
