@@ -1,5 +1,7 @@
 import React from "react";
 
+import SwipePad from "./SwipePad";
+
 import "../scss/bank-btn.scss";
 import "../scss/swipe-pad.scss";
 
@@ -17,7 +19,7 @@ const Utils = () => {
         </div>
         <div className="app-col-6">
           <div className="app-u-justify-content-end app-u-d-flex">
-            <div className="swipe-pad"></div>
+            <SwipePad />
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 244px;
   height: 48px;
-  background-color: $color-slate-500;
-  display: flex;
+  background-color: $color-slate-400;
+  border-radius: 6px;
+  box-shadow: inset 2px -2px 2px rgba(0, 0, 0, 0.2);
 }
