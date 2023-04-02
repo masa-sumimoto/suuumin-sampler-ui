@@ -19,14 +19,14 @@
   // &.--size_lg {}
 
   &__foundation {
-    background-color: $color-gray-900;
+    background-color: $color-slate-900;
     width: calc(100% - $_pad-border-size * 2);
     position: relative;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
     border-radius: $_pad-radius;
 
     @at-root .pad.--state_active & {
-      background-color: #22d3ee;
+      background-color: $color-cyan-400;
     }
 
     // 1px大きな背面要素で枠線を表現
@@ -36,7 +36,7 @@
       bottom: -#{$_pad-border-size};
       left: -#{$_pad-border-size};
       right: -#{$_pad-border-size};
-      background: linear-gradient(0deg, $color-gray-900, $color-gray-700);
+      background: linear-gradient(0deg, $color-slate-900, $color-slate-700);
       content: "";
       border-radius: $_pad-radius;
       z-index: -1;
@@ -112,7 +112,7 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
-    color: $color-gray-100;
+    color: $color-slate-100;
     font-size: 12px;
     line-height: 1;
   }

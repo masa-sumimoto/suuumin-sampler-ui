@@ -14,7 +14,6 @@ const Pad = ({ isActive = false, size = "md", label, ...props }: PadProps) => {
   return (
     <div className={["pad", `--size_${size}`, activeClass].join(" ")}>
       <div className="pad__foundation"></div>
-
       <div className="pad__btn-wrap">
         <button className="pad__btn" onClick={props.onClick}>
           {label && <span className="pad__label">{label}</span>}

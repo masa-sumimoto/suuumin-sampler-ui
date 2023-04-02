@@ -12,6 +12,11 @@
 
 ![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/layout-1280.png)
 
+### Colors
+
+![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/color-system.png)
+
+
 ### This project uses:
 
 - React.js
