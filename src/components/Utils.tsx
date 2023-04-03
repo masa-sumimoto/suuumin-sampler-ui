@@ -1,5 +1,6 @@
 import React from "react";
 
+import BankBtn from "./BankBtn";
 import SwipePad from "./SwipePad";
 
 const Utils = () => {
@@ -8,10 +9,10 @@ const Utils = () => {
       <div className="app-row app-u-justify-content-between">
         <div className="app-col-6">
           <div className="app-u-d-flex app-u-d-gap-gutter">
-            <div className="bank-btn">A</div>
-            <div className="bank-btn">B</div>
-            <div className="bank-btn">C</div>
-            <div className="bank-btn">D</div>
+            <BankBtn label="A" isSelected={true} />
+            <BankBtn label="B" />
+            <BankBtn label="C" />
+            <BankBtn label="D" />
           </div>
         </div>
         <div className="app-col-6">

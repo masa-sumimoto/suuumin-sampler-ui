@@ -1,8 +1,45 @@
 @use './variables' as *;
 
 .bank-btn {
+  position: relative;
   width: 48px;
   height: 48px;
   background-color: $color-slate-500;
+  border-radius: 6px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-slate-500;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: $color-cyan-500;
+  }
+
+  &.--state_selected {
+    background-color: $color-cyan-400;
+    border-color: $color-cyan-400;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    opacity: 0.2;
+    content: "";
+    z-index: 1;
+  }
+
+  &__label {
+    font-weight: 700;
+    color: $color-slate-800;
+
+    @at-root .bank-btn.--state_selected & {
+      color: white;
+    }
+  }
 }
