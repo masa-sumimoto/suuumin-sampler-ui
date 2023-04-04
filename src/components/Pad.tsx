@@ -13,8 +13,14 @@ const Pad = ({ isActive = false, size = "md", label, ...props }: Props) => {
 
   const padRef = useRef<HTMLDivElement | null>(null);
 
+  const handleClick = () => {
+    // padRef.current?.classList.add("--state_active");
+    // if (props.onMouseDown) {
+    //   props.onMouseDown();
+    // }
+  };
+
   const handleMouseDown = () => {
-    console.log(padRef.current?.classList);
     padRef.current?.classList.add("--state_active");
 
     if (props.onMouseDown) {
@@ -23,7 +29,10 @@ const Pad = ({ isActive = false, size = "md", label, ...props }: Props) => {
   };
 
   const handleMouseUp = () => {
-    padRef.current?.classList.remove("--state_active");
+    setTimeout(() => {
+      padRef.current?.classList.remove("--state_active");
+    }, 50);
+
     if (props.onMouseUp) {
       props.onMouseUp();
     }
@@ -35,6 +44,7 @@ const Pad = ({ isActive = false, size = "md", label, ...props }: Props) => {
       className={["pad", `--size_${size}`, activeClass].join(" ")}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
+      onClick={handleClick}
     >
       <div className="pad__foundation"></div>
       <div className="pad__btn-wrap">
