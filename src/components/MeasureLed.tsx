@@ -1,11 +1,16 @@
 import React from "react";
 
-interface MeasureLedProps {
-  isActive?: boolean;
+import { useTimeStore } from "../stores/timeStore";
+
+interface Props {
+  id: number;
+  // isActive?: boolean;
 }
 
-const MeasureLed = ({ isActive = false }: MeasureLedProps) => {
-  const activeClass = isActive ? "--state_active" : "";
+const MeasureLed = ({ id }: Props) => {
+  const { measure } = useTimeStore();
+
+  const activeClass = id === measure ? "--state_active" : "";
 
   return <span className={["measure-led", activeClass].join(" ")}></span>;
 };
