@@ -6,7 +6,6 @@ import { useBankStore } from "./stores/bankStore";
 
 import AppBody from "./components-layout/AppBody";
 
-export const CountContext = React.createContext<number>(0);
 export const TimeContext = React.createContext<number>(1);
 export const BankContext = React.createContext<string>("a");
 

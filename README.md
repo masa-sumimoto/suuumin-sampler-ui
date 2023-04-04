@@ -12,10 +12,11 @@
 
 ### This project uses:
 
-- React.js
-- TypeScript
-- Figma
-- Storybook
+- App : [React.js](https://react.dev/) / [TypeScript](https://www.typescriptlang.org/)
+- State Management : [Zustand](https://github.com/pmndrs/zustand)
+- Design : [Figma](https://www.figma.com/)
+- Design Component Management : [Storybook](https://storybook.js.org/)
+
 
 ## Previews
 
