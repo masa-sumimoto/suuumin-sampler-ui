@@ -24,17 +24,17 @@ const Utils = () => {
   ];
 
   return (
-    <div className="app-col-12">
+    <div className="app-col-12 app-u-mt-gutter">
       <div className="app-row app-u-justify-content-between">
-        <div className="app-col-6">
+        <div className="app-col-12 app-col-md-6 app-u-mb-gutter">
           <div className="app-u-d-flex app-u-d-gap-gutter">
             {bankBtns.map((btn) => (
               <BankBtn key={btn.id} id={btn.id} label={btn.label} />
             ))}
           </div>
         </div>
-        <div className="app-col-6">
-          <div className="app-u-justify-content-end app-u-d-flex">
+        <div className="app-col-12 app-col-md-6">
+          <div className="app-u-justify-content-end app-u-d-flex app-u-mb-gutter">
             <SwipePad />
           </div>
         </div>

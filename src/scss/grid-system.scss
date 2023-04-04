@@ -81,3 +81,10 @@
     width: 50%;
   }
 }
+
+.app-col-md-6 {
+  @include col-style;
+  @media (min-width: map.get($app-breakpoints, "md")) {
+    width: 50%;
+  }
+}

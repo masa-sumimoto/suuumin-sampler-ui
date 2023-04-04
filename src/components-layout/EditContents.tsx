@@ -8,7 +8,7 @@ import Faders from "../components/Faders";
 const EditContents = () => {
   return (
     <div className="edit-container">
-      <div className="app-row app-u-py-gutter app-u-mx-0">
+      <div className="app-row app-u-mx-0">
         <Utils />
       </div>
       <div className="app-row app-u-py-gutter app-u-mx-0">
