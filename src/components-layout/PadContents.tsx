@@ -7,10 +7,14 @@ const PadContents = () => {
     <div className="pad-container">
       <div className="app-row app-u-py-gutter app-u-mx-0">
         <div className="app-col-4">
-          <Pad label="1" onClick={() => console.log("clicked pad!")} />
+          <Pad
+            label="1"
+            onMouseDown={() => console.log("down!")}
+            onMouseUp={() => console.log("up!")}
+          />
         </div>
         <div className="app-col-4">
-          <Pad label="2" isActive={true} />
+          <Pad label="2" />
         </div>
         <div className="app-col-4">
           <Pad label="3" />
