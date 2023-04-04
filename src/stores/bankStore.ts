@@ -1,11 +1,14 @@
 import { create } from "zustand";
 
-type BankState = {
+type State = {
   bankId: string;
+};
+
+type Action = {
   change: (v: string) => void;
 };
 
-export const useBankStore = create<BankState>((set, get) => ({
+export const useBankStore = create<State & Action>()((set, get) => ({
   bankId: "a",
   change: (v) => set({ bankId: v }),
 }));

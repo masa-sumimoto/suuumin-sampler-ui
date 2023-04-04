@@ -1,11 +1,14 @@
 import { create } from "zustand";
 
-type TimeState = {
+type State = {
   measure: number;
+};
+
+type Action = {
   changeMeasure: (v: number) => void;
 };
 
-export const useTimeStore = create<TimeState>((set, get) => ({
+export const useTimeStore = create<State & Action>()((set, get) => ({
   measure: 1,
   changeMeasure: (v) => set({ measure: v }),
 }));
