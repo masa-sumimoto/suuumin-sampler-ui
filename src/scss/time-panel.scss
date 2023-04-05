@@ -1,0 +1,27 @@
+@use './variables' as *;
+
+.time-panel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-slate-950;
+  height: 36px;
+  width: 100%;
+
+  &__view {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  &__beat-red {
+    position: absolute;
+    top: 50%;
+    right: $app-gutter;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: $color-pink-700;
+  }
+}

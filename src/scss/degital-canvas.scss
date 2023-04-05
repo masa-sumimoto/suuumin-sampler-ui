@@ -6,9 +6,9 @@
   border: 1px solid $color-slate-800;
   height: 200px;
 
-  @media (min-width: map.get($app-breakpoints, "lg")) {
-    height: 240px;
-  }
+  // @media (min-width: map.get($app-breakpoints, "lg")) {
+  //   height: 240px;
+  // }
 
   canvas {
     width: 100%;

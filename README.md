@@ -44,18 +44,6 @@ https://suuumin-sampler-ui.masa-sumimoto.com/
 
 ![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/color-system.png)
 
-I think about color in three steps.
-
-The first is like a color palette. All colors used in the design are limited to these.
-
-(Irregulars also exist. For example, if you want to add a Twitter icon, it's a special color that is excluded from this world.)
-
-The second is "role colors".  
-For example, in flashing lights, it is very useful to indicate its status.
-
-The third are for design parts.  
-These are only partially shown as more specific color schemes can be referenced from the actual parts.
-
 
 ## Roadmap to Version 0.1.0
 

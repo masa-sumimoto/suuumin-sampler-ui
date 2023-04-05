@@ -1,0 +1,55 @@
+@use 'sass:map';
+@use './variables' as *;
+
+.bpm-panel {
+  background-color: $color-slate-950;
+  font-weight: 700;
+  cursor: row-resize;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__display {
+    font-size: 14px;
+    color: white;
+    padding: 0 $app-gutter;
+    flex: 1;
+  }
+
+  &__label {
+    display: none;
+
+    @media (min-width: map.get($app-breakpoints, "md")) {
+      display: inline-block;
+    }
+
+    @media (min-width: map.get($app-breakpoints, "lg")) {
+      display: none;
+    }
+
+    @media (min-width: map.get($app-breakpoints, "xl")) {
+      display: inline-block;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 1px;
+  }
+
+  &__btn {
+    background-color: $color-purple-800;
+    color: $color-purple-200;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $color-purple-900;
+      color: $color-purple-50;
+    }
+  }
+}
