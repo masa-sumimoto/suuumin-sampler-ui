@@ -59,12 +59,10 @@ These are only partially shown as more specific color schemes can be referenced 
 
 ## Roadmap to Version 0.1.0
 
-1. Rough Design & Coding (with Figma & React) **<=== NOW!!**
-2. Examining color schemes and design tokens  (with Figma)
-3. Create components for primary design parts (with Figma)
-4. Create React Components (with React)
-5. Two-way brush-up of Figma and React designs
-6. Publish Figma files as Figma template
+1. Rough Design & Coding (with Figma & React)
+2. Interactive app design **<=== NOW!!**
+3. Creating design systems on code (width storybook)
+4. Publish Figma files as Figma template
 
 ※Until version 0.1.0, I will do destructive editing.
 
