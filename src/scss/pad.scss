@@ -26,8 +26,32 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
     border-radius: $_pad-radius;
 
-    @at-root .pad.--state_active & {
-      background-color: $color-cyan-400;
+    // @at-root .pad.--state_active & {
+    //   background-color: red;
+    // }
+
+    @at-root .pad.--color_1 & {
+      background-color: $color-role-pad-active-1;
+    }
+
+    @at-root .pad.--color_2 & {
+      background-color: $color-role-pad-active-2;
+    }
+
+    @at-root .pad.--color_3 & {
+      background-color: $color-role-pad-active-3;
+    }
+
+    @at-root .pad.--color_4 & {
+      background-color: $color-role-pad-active-4;
+    }
+
+    @at-root .pad.--color_5 & {
+      background-color: $color-role-pad-active-5;
+    }
+
+    @at-root .pad.--color_6 & {
+      background-color: $color-role-pad-active-6;
     }
 
     // 1px大きな背面要素で枠線を表現

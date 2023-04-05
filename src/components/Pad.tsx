@@ -2,14 +2,22 @@ import React, { useRef } from "react";
 
 interface Props {
   isActive?: boolean;
+  activeColorId?: number;
   size?: "sm" | "md" | "lg";
   label?: string;
   onMouseDown?: () => void;
   onMouseUp?: () => void;
 }
 
-const Pad = ({ isActive = false, size = "md", label, ...props }: Props) => {
-  const activeClass = isActive ? "--state_active" : "";
+const Pad = ({
+  isActive = false,
+  activeColorId = 1,
+  size = "md",
+  label,
+  ...props
+}: Props) => {
+  const activeClass = "--state_active";
+  const colorClass = `--color_${activeColorId}`;
 
   const padRef = useRef<HTMLDivElement | null>(null);
 
@@ -21,27 +29,25 @@ const Pad = ({ isActive = false, size = "md", label, ...props }: Props) => {
   };
 
   const handleMouseDown = () => {
-    padRef.current?.classList.add("--state_active");
+    padRef.current?.classList.add(activeClass);
+    padRef.current?.classList.add(colorClass);
 
-    if (props.onMouseDown) {
-      props.onMouseDown();
-    }
+    if (props.onMouseDown) props.onMouseDown();
   };
 
   const handleMouseUp = () => {
     setTimeout(() => {
-      padRef.current?.classList.remove("--state_active");
+      padRef.current?.classList.remove(activeClass);
+      padRef.current?.classList.remove(colorClass);
     }, 50);
 
-    if (props.onMouseUp) {
-      props.onMouseUp();
-    }
+    if (props.onMouseUp) props.onMouseUp();
   };
 
   return (
     <div
       ref={padRef}
-      className={["pad", `--size_${size}`, activeClass].join(" ")}
+      className={["pad", `--size_${size}`].join(" ")}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onClick={handleClick}
