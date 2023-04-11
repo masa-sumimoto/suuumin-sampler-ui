@@ -4,7 +4,16 @@
 .app-container {
   width: 100%;
   max-width: 100%;
-  padding: 0 $app-gutter;
+  padding-left: $app-sp-gutter;
+  padding-right: $app-sp-gutter;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.--style_app-body {
+    background-color: $color-slate-900;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
 
   @media (min-width: map.get($app-breakpoints, "sm")) {
     max-width: map.get($app-max-widths, "sm");
@@ -21,13 +30,19 @@
   @media (min-width: map.get($app-breakpoints, "xl")) {
     width: map.get($app-max-widths, "xl");
     max-width: map.get($app-max-widths, "xl");
+    padding-left: $app-gutter;
+    padding-right: $app-gutter;
   }
 }
 
 .app-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1 * $app-gutter;
+  margin: 0 -1 * $app-sp-gutter;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    margin: 0 -1 * $app-gutter;
+  }
 }
 
 // .app-row > [class^="app-col-"] {
@@ -41,7 +56,11 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
-  padding: 0 $app-gutter;
+  padding: 0 $app-sp-gutter;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    padding: 0 $app-gutter;
+  }
 }
 
 .app-col {

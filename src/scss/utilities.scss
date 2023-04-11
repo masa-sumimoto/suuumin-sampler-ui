@@ -9,13 +9,43 @@
 // 後日ひとまとめに書く
 
 .app-u-py-gutter {
-  padding-top: $app-gutter !important;
-  padding-bottom: $app-gutter !important;
+  padding-top: $app-sp-gutter !important;
+  padding-bottom: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    padding-top: $app-gutter !important;
+    padding-bottom: $app-gutter !important;
+  }
+}
+
+.app-u-px-gutter {
+  padding-right: $app-sp-gutter !important;
+  padding-left: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    padding-right: $app-gutter !important;
+    padding-left: $app-gutter !important;
+  }
 }
 
 .app-u-my-gutter {
-  margin-top: $app-gutter !important;
-  margin-bottom: $app-gutter !important;
+  margin-top: $app-sp-gutter !important;
+  margin-bottom: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    margin-top: $app-gutter !important;
+    margin-bottom: $app-gutter !important;
+  }
+}
+
+.app-u-mx-gutter {
+  margin-right: $app-sp-gutter !important;
+  margin-left: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    margin-right: $app-gutter !important;
+    margin-left: $app-gutter !important;
+  }
 }
 
 .app-u-mx-0 {
@@ -37,19 +67,35 @@
 }
 
 .app-u-mb-gutter {
-  margin-bottom: $app-gutter !important;
+  margin-bottom: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    margin-bottom: $app-gutter !important;
+  }
 }
 
 .app-u-pb-gutter {
-  padding-bottom: $app-gutter !important;
+  padding-bottom: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    padding-bottom: $app-gutter !important;
+  }
 }
 
 .app-u-mt-gutter {
-  margin-top: $app-gutter !important;
+  margin-top: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    margin-top: $app-gutter !important;
+  }
 }
 
 .app-u-pt-gutter {
-  padding-top: $app-gutter !important;
+  padding-top: $app-sp-gutter !important;
+
+  @media (min-width: map.get($app-breakpoints, "xl")) {
+    padding-top: $app-gutter !important;
+  }
 }
 
 // position

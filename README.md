@@ -38,7 +38,10 @@ https://suuumin-sampler-ui.masa-sumimoto.com/
 
 ### Layout Sample (1280 pixels wide case)
 
-![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/layout-1280.png)
+![layouts-xl](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/layout-xl.png)
+
+![breakpoints](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/breakpoints.png)
+
 
 ### Colors
 

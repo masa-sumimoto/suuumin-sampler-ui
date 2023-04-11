@@ -9,7 +9,7 @@ import MeasurePanel from "../components/MeasurePanel";
 
 const EditContents = () => {
   return (
-    <div className="edit-container">
+    <div className="edit-group">
       <div className="app-row app-u-mx-0">
         <Utils />
       </div>

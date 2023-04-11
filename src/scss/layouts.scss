@@ -5,6 +5,7 @@
   height: 100%;
   width: 100%;
   padding: 1rem;
+  margin: auto;
 }
 
 .meta-info {
@@ -36,18 +37,10 @@
 }
 
 .app {
-  display: flex;
-  justify-content: center;
   color: $color-role-text;
   height: auto;
   padding: $app-gutter 0;
-}
-
-.app-body {
-  background-color: $color-slate-900;
-  border-radius: 6px;
-  padding: $app-gutter 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .head-container {
@@ -55,9 +48,9 @@
   height: 36px;
 }
 
-.pad-container {
+.pad-group {
   position: relative;
   z-index: 1;
 }
 
-// .edit-container {}
+// .edit-group {}
