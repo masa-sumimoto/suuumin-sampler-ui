@@ -1,15 +1,20 @@
+@use 'sass:map';
 @use './variables' as *;
 
 .menu-btn {
   position: relative;
   display: inline-block;
-  height: 64px;
+  height: 40px;
   background-color: $color-slate-500;
   cursor: pointer;
   border-radius: 6px;
   width: 100%;
   border: none;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.44);
+
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    height: 64px;
+  }
 
   &::before {
     content: " ";
