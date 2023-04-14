@@ -30,28 +30,10 @@
     //   background-color: red;
     // }
 
-    @at-root .pad.--color_1 & {
-      background-color: $color-role-pad-active-1;
-    }
-
-    @at-root .pad.--color_2 & {
-      background-color: $color-role-pad-active-2;
-    }
-
-    @at-root .pad.--color_3 & {
-      background-color: $color-role-pad-active-3;
-    }
-
-    @at-root .pad.--color_4 & {
-      background-color: $color-role-pad-active-4;
-    }
-
-    @at-root .pad.--color_5 & {
-      background-color: $color-role-pad-active-5;
-    }
-
-    @at-root .pad.--color_6 & {
-      background-color: $color-role-pad-active-6;
+    @each $key, $val in $pad-foundation-active-colors {
+      @at-root .pad.--state_active.--color_#{$key} & {
+        background-color: $val;
+      }
     }
 
     // 1px大きな背面要素で枠線を表現
@@ -70,15 +52,15 @@
     // 正方形を保つためのratio表現
     &::before {
       display: block;
-      padding-top: 100%;
+      padding-top: calc(1 / 1 * 100%);
       content: "";
 
       @media (min-width: map.get($app-breakpoints, "sm")) {
-        padding-top: 60%;
+        padding-top: calc(6 / 13 * 100%);
       }
 
       @media (min-width: map.get($app-breakpoints, "lg")) {
-        padding-top: 100%;
+        padding-top: calc(1 / 1 * 100%);
       }
     }
   }
@@ -138,6 +120,21 @@
       content: "";
       z-index: 2;
       border-radius: $_pad-radius;
+    }
+
+    @each $key, $val in $pad-foundation-active-colors {
+      @at-root .pad.--state_active.--color_#{$key} &::after {
+        background: $val;
+        filter: blur(20px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        opacity: 1;
+      }
     }
   }
 

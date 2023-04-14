@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 interface Props {
   isActive?: boolean;
-  activeColorId?: number;
+  colorId?: number;
   size?: "sm" | "md" | "lg";
   label?: string;
   onMouseDown?: () => void;
@@ -11,13 +11,12 @@ interface Props {
 
 const Pad = ({
   isActive = false,
-  activeColorId = 1,
+  colorId = 1,
   size = "md",
   label,
   ...props
 }: Props) => {
   const activeClass = "--state_active";
-  const colorClass = `--color_${activeColorId}`;
 
   const padRef = useRef<HTMLDivElement | null>(null);
 
@@ -30,7 +29,6 @@ const Pad = ({
 
   const handleMouseDown = () => {
     padRef.current?.classList.add(activeClass);
-    padRef.current?.classList.add(colorClass);
 
     if (props.onMouseDown) props.onMouseDown();
   };
@@ -38,7 +36,6 @@ const Pad = ({
   const handleMouseUp = () => {
     setTimeout(() => {
       padRef.current?.classList.remove(activeClass);
-      padRef.current?.classList.remove(colorClass);
     }, 50);
 
     if (props.onMouseUp) props.onMouseUp();
@@ -47,7 +44,7 @@ const Pad = ({
   return (
     <div
       ref={padRef}
-      className={["pad", `--size_${size}`].join(" ")}
+      className={["pad", `--size_${size} --color_${colorId}`].join(" ")}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onClick={handleClick}
