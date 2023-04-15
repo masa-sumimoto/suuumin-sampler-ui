@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 
+import "../scss/pad.scss";
+
 interface Props {
   isActive?: boolean;
   colorId?: number;

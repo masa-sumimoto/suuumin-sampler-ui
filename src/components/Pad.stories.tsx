@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Pad from "./Pad";
 
 export default {
-  title: "suuumin/Pad",
+  title: "suuumin!!!/Pad",
   component: Pad,
 } as ComponentMeta<typeof Pad>;
 
@@ -20,7 +20,7 @@ Default.args = {
 export const Active = Template.bind({});
 Active.args = {
   isActive: true,
-  label: "Label",
+  label: "masa",
 };
 
 export const Large = Template.bind({});
