@@ -41,13 +41,20 @@ class Particle {
   }
 }
 
+type ParticleSystemProps = {
+  canvas: HTMLCanvasElement;
+  canvasW: number;
+  canvasH: number;
+  numParticles: number;
+};
+
 class ParticleSystem {
   particles: Particle[] = [];
 
-  constructor(canvas: HTMLCanvasElement, numParticles: number) {
+  constructor({ canvas, canvasW, canvasH, numParticles }: ParticleSystemProps) {
     for (let i = 0; i < numParticles; i++) {
-      const x = Math.random() * canvas.width;
-      const y = Math.random() * canvas.height;
+      const x = Math.random() * canvasW;
+      const y = Math.random() * canvasH;
       const size = Math.floor(Math.random() * 8) + 4;
       const velocityX = (Math.random() - 0.5) * 10;
       const velocityY = (Math.random() - 0.5) * 10;

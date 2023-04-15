@@ -8,26 +8,35 @@ const DegitalCanvas: React.FC<{}> = () => {
   useEffect(() => {
     if (canvas.current) {
       const ctx = canvas.current.getContext("2d");
+
+      // canvasのサイズは x2のサイズで指定
+      const canvasW = canvas.current!.getBoundingClientRect().width * 2;
+      const canvasH = canvas.current!.getBoundingClientRect().height * 2;
+      const cmnOpts = {
+        canvas: canvas.current,
+        canvasW,
+        canvasH,
+      };
+
       const systems = [
-        new RectSystem(canvas.current),
-        new ParticleSystem(canvas.current, 100),
+        new RectSystem(cmnOpts),
+        new ParticleSystem({ ...cmnOpts, numParticles: 100 }),
       ];
 
       // 今2つしかパターンがないので0か1かをランダムに
       const system = systems[Math.floor(Math.random() * 2)];
 
       if (ctx) {
+        canvas.current!.width = canvasW;
+        canvas.current!.height = canvasH;
         const loop = () => {
-          // x2で高解像度に
-          canvas.current!.width =
-            canvas.current!.getBoundingClientRect().width * 2;
-          canvas.current!.height =
-            canvas.current!.getBoundingClientRect().height * 2;
-          ctx.clearRect(0, 0, canvas.current!.width, canvas.current!.height);
+          ctx.clearRect(0, 0, canvasW, canvasH);
           system.update(canvas.current!);
           system.draw(ctx);
           requestAnimationFrame(loop);
         };
+
+        // setTimeout(loop, 200);
 
         loop();
       }

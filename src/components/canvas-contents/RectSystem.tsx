@@ -77,14 +77,20 @@ class Rect {
   }
 }
 
+type RectSystemProps = {
+  canvas: HTMLCanvasElement;
+  canvasW: number;
+  canvasH: number;
+};
+
 class RectSystem {
   rects: Rect[] = [];
 
-  constructor(canvas: HTMLCanvasElement) {
+  constructor({ canvas, canvasW, canvasH }: RectSystemProps) {
     const rectXNum = 20;
     const rectYNum = 10;
-    const rectW = canvas.width / rectXNum;
-    const rectH = canvas.height / rectYNum;
+    const rectW = canvasW / rectXNum;
+    const rectH = canvasH / rectYNum;
 
     for (let i = 0; i < rectYNum; i++) {
       for (let j = 0; j < rectXNum; j++) {
