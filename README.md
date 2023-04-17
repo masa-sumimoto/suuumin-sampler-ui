@@ -2,7 +2,7 @@
 
 **Suuumin Sampler UI** is a design system and React components with the motif of a music sampler.
 
-![ui-cover](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/cover.jpg)
+![ui-cover](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/cover.png)
 
 ### Feature:
 
@@ -34,7 +34,7 @@ https://suuumin-sampler-ui.masa-sumimoto.com/
 
 ### UI Sample (1280 pixels wide case)
 
-![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/ui-1280.png)
+![ui-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/basic-1280.png)
 
 ### Layout Sample (1280 pixels wide case)
 
@@ -45,15 +45,11 @@ https://suuumin-sampler-ui.masa-sumimoto.com/
 
 ### Colors
 
-![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/color-system.png)
+![wireframe-preview](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/color-guidance.png)
 
 
 ## Roadmap to Version 0.1.0
 
-1. Rough Design & Coding (with Figma & React)
-2. Interactive app design **<=== NOW!!**
-3. Creating design systems on code (width storybook)
-4. Publish Figma files as Figma template
+![ui-cover](https://github.com/masa-sumimoto/suuumin-sampler-ui/blob/main/assets/images/about.png)
 
-※Until version 0.1.0, I will do destructive editing.
 
