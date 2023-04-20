@@ -19,6 +19,7 @@
 
   &__label {
     display: none;
+    padding-right: 0.25rem;
 
     @media (min-width: map.get($app-breakpoints, "md")) {
       display: inline-block;
