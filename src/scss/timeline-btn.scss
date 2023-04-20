@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use './variables' as *;
+
+.timeline-btn {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  background-color: $color-slate-500;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.44);
+
+  @media (min-width: map.get($app-breakpoints, "lg")) {
+    height: 64px;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(
+        116.9deg,
+        rgba(0, 0, 0, 0) 2.63%,
+        rgba(0, 0, 0, 0.2) 66.83%
+      ),
+      $color-slate-500;
+  }
+
+  &:hover::before {
+    background: linear-gradient(
+        116.9deg,
+        rgba(0, 0, 0, 0) 2.63%,
+        rgba(0, 0, 0, 0.26) 50.83%
+      ),
+      $color-slate-500;
+  }
+
+  &__icon-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 2;
+    line-height: 1;
+  }
+}

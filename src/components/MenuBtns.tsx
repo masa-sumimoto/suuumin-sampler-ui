@@ -1,6 +1,11 @@
 import React from "react";
 
 import MenuBtn from "./MenuBtn";
+import TimelineBtn from "./TimelineBtn";
+
+// icons
+import iconPausePlay from "../images/icon-timeline-btn-pause-play.svg";
+import IconTimelineBtnPausePlay from "../icons/IconTimelineBtnPausePlay";
 
 const Menus = () => {
   return (
@@ -27,16 +32,16 @@ const Menus = () => {
           <MenuBtn label="menu6" />
         </div>
         <div className="app-col-1dot5">
-          <div className="menu-btn"></div>
+          <TimelineBtn role="rec" />
         </div>
         <div className="app-col-1dot5">
-          <div className="menu-btn"></div>
+          <TimelineBtn role="back" />
         </div>
         <div className="app-col-1dot5">
-          <div className="menu-btn"></div>
+          <TimelineBtn role="pause" />
         </div>
         <div className="app-col-1dot5">
-          <div className="menu-btn"></div>
+          <TimelineBtn role="play" />
         </div>
       </div>
     </div>
